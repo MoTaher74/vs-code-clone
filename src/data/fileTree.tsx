@@ -5,7 +5,7 @@ export const fileTree:IFile = {
     isFolder:true,
     children:[
         {
-            name:"node-modules",
+            name:"node_modules",
             isFolder:true,
             children:[{name:'.vite',isFolder:true,children:[{name:'react.js',isFolder:false}]}]
         },
@@ -15,7 +15,21 @@ export const fileTree:IFile = {
             children:[{name:'App',isFolder:true,children:[{name:'react.js',isFolder:false}]}]
         },
         {
-            name:"index.html",
+            name:"components",
+            isFolder:true,
+             children:[{name:'App',isFolder:true,children:[{name:'react.edie',isFolder:false}]}]
+        },
+        {
+            name:"index.jsx",
+            isFolder:false
+        },
+        {
+            name:"index.ts",
+            isFolder:false
+        },
+    
+        {
+            name:"index.tsx",
             isFolder:false
         }
     ]

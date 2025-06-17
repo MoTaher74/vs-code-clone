@@ -2,12 +2,11 @@
 import { useState } from "react";
 import type { IFile } from "../interfaces/interface";
 import BottomIconArrow from "./SVG/BottomIconArrow";
-import FileIcon from "./SVG/FileIcon";
-import FolderCloseIcon from "./SVG/FolderCloseIcon";
-import FolderOpenIcon from "./SVG/FolderOpenIcon";
+
 
 import RightIconArrow from "./SVG/RightIconArrow";
 import RenderFIleIcon from "./RenderFIleIcon";
+
 
 interface IProps{
 fileTree : IFile;
@@ -29,12 +28,13 @@ return (
         {
           isOpen?(<>
           <BottomIconArrow/>
-            <FolderOpenIcon/>
+          <RenderFIleIcon filename={fileTree.name} isFolder={fileTree.isFolder} isOpen={isOpen}/>
             </>
           ):(<>
           <RightIconArrow/>
-            <FolderCloseIcon/>
+          <RenderFIleIcon filename={fileTree.name} isFolder={fileTree.isFolder} isOpen={isOpen}/>
           </>)
+     
         }
       </div>
     ):(

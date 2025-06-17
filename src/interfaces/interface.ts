@@ -4,3 +4,10 @@ export interface IFile{
     isFolder:boolean;
     content?:string
 }
+
+export interface IRenderFIleIcon{
+filename:string;
+isFolder?:boolean;
+isOpen?:boolean
+
+}
