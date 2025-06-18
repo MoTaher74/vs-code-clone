@@ -7,6 +7,7 @@ import FileIcon from "./SVG/FileIcon";
 
 
 const RenderFIleIcon =({filename,isFolder,isOpen}:IRenderFIleIcon)=>{
+   
     // const fileExt = filename.split('.').pop()?.toLowerCase();
     const fileExt = filename.split('.').pop();
     if(fileExt && Object.prototype.hasOwnProperty.call(extIconPath,fileExt)) {
